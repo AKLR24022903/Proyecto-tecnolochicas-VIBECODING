@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practy Soluciones</title>
+  <!-- Fuente unificada: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Hoja de estilos externa -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- BANNER & NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="brand">
+        <div class="logo-box">P</div>
+        <span class="brand-name">Practy Soluciones</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio" class="nav-item">Inicio</a>
+        <a href="#servicios" class="nav-item">Servicios</a>
+        <a href="#contacto" class="nav-item">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SECCIÓN INICIO / HERO -->
+  <section id="inicio" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-text">
+        <span class="badge">Mantenimiento de Software - Chalco</span>
+        <h1 class="hero-title">Practy Soluciones. Chalco</h1>
+        <p class="hero-description">
+          Soy un FreeLancer dedicado al mantenimiento correctivo de computo para el área de software, ofrezco mis servicios con calidad y a domicilio a fin de brindarte soluciones practicas y económicas pará virus, paqueterías y sistemas operativos
+        </p>
+        <a href="#contacto" class="btn-primary">
+          Hablemos de tu equipo 
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+      </div>
+
+      <!-- CARRUSEL DE IMÁGENES -->
+      <div class="carousel-wrapper">
+        <div class="carousel-container" id="carousel">
+          
+          <!-- Imagen 1 -->
+          <div class="carousel-slide active">
+            <!-- REEMPLAZA "src" CON LA RUTA DE TU IMAGEN -->
+            <img src="https://images.unsplash.com/photo-1588508065123-287b28e013da?auto=format&fit=crop&w=1200&q=80" alt="Soporte técnico y mantenimiento">
+            <div class="carousel-caption">Soporte que sigue contigo</div>
+          </div>
+
+          <!-- Imagen 2 -->
+          <div class="carousel-slide">
+            <!-- REEMPLAZA "src" CON LA RUTA DE TU IMAGEN -->
+            <img src="https://images.unsplash.com/photo-1597852074816-d933c7d2b988?auto=format&fit=crop&w=1200&q=80" alt="Limpieza y optimización de software">
+            <div class="carousel-caption">Soluciones prácticas y económicas</div>
+          </div>
+
+          <!-- Imagen 3 -->
+          <div class="carousel-slide">
+            <!-- REEMPLAZA "src" CON LA RUTA DE TU IMAGEN -->
+            <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&q=80" alt="Atención personalizada a domicilio">
+            <div class="carousel-caption">Servicio directo a tu domicilio</div>
+          </div>
+
+          <!-- Botones de Navegación del Carrusel -->
+          <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">&#10094;</button>
+          <button class="carousel-btn next" id="nextBtn" aria-label="Siguiente">&#10095;</button>
+
+          <!-- Indicadores -->
+          <div class="carousel-indicators" id="indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN SERVICIOS -->
+  <section id="servicios" class="services-section">
+    <div class="section-header">
+      <span class="badge">Especialidades</span>
+      <h2 class="section-title">Nuestros Servicios</h2>
+      <p class="section-subtitle">Mantenimiento enfocado en devolver la velocidad, estabilidad y seguridad a tu equipo de cómputo.</p>
+    </div>
+
+    <div class="services-grid">
+      <!-- Servicio 1 -->
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        </div>
+        <h3 class="service-title">Eliminar Malware (virus)</h3>
+        <p class="service-text">Detección y eliminación profunda de virus, troyanos, spyware y software malicioso. Limpieza del sistema sin perder tus archivos importantes.</p>
+      </div>
+
+      <!-- Servicio 2 -->
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+        </div>
+        <h3 class="service-title">Arreglos de Sistemas operativos</h3>
+        <p class="service-text">Corrección de errores de arranque, pantallas azules, lentitud extrema y fallas de actualización en Windows. Reinstalación y optimización limpia.</p>
+      </div>
+
+      <!-- Servicio 3 -->
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        </div>
+        <h3 class="service-title">Descarga de paqueterías de manera segura</h3>
+        <p class="service-text">Instalación y configuración garantizada de suites de oficina, antivirus, navegadores y herramientas de trabajo libres de publicidad engañosa.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN CONTACTO -->
+  <section id="contacto" class="contact-section">
+    <div class="contact-card">
+      <h2 class="contact-title">¿Tu equipo falla o necesita mantenimiento?</h2>
+      <p class="contact-text">Agenda una visita a domicilio en Chalco y alrededores. Diagnóstico claro y atención directa.</p>
+      <a href="https://wa.me/?text=Hola,%20me%20interesa%20un%20servicio%20de%20mantenimiento%20para%20mi%20equipo." target="_blank" rel="noopener noreferrer" class="btn-primary">
+        Enviar mensaje por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 Practy Soluciones — Chalco. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Script JavaScript externo -->
+  <script src="script.js"></script>
+</body>
+</html>
